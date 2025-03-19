@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 bg-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+
+  .bg-gradient-custom {
+    @apply bg-gradient-to-b from-blue-50 via-white to-gray-50;
+  }
+
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+
+  .animate-float-slow {
+    animation: float 8s ease-in-out 1s infinite;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium 
+           shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/40 
+           transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-gray-700 rounded-lg font-medium border border-gray-200
+           shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-gray-600 hover:text-blue-600 transition-colors duration-300;
+  }
+  
+  .section-container {
+    @apply container mx-auto px-4 max-w-7xl;
+  }
+  
+  .section {
+    @apply py-20;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden hover-card;
+  }
+
+  .input-field {
+    @apply mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 
+           shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 
+           focus:ring-blue-500 transition-all duration-300;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium
+           hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white
+           transition-all duration-300;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-6xl font-bold leading-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-5xl font-bold;
+  }
+
+  .heading-md {
+    @apply text-2xl font-bold;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
