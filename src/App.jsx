@@ -123,7 +123,7 @@ function App() {
                 </div>
               </div>
               <div className="hidden md:block relative">
-                <div className="relative w-full aspect-square max-w-md mx-auto">
+                <div className="relative w-full max-w-md mx-auto" style={{ height: '550px' }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl transform rotate-6 scale-105"></div>
                   <img 
                     src="/image.jpeg" 
