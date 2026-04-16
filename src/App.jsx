@@ -9,18 +9,18 @@ function App() {
 
   const devProjects = [
     {
-      title: "Women in the Profession",
-      description: "A simple website built using HTML and CSS, focused on showcasing women in professional fields.",
-      technologies: ["HTML", "CSS"],
-      projectUrl: "https://women-in-profession.vercel.app/",
-      githubUrl: "https://github.com/gichuhiii/women-in-profession"
+      title: "TUMAINI",
+      description: "A cervical cancer screening platform connecting patients with healthcare providers, featuring risk assessment, cost calculation, and AI-powered screening recommendations.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Redux"],
+      projectUrl: "https://tumaini.vercel.app/",
+      githubUrl: "https://github.com/gichuhiii/tumaini"
     },
     {
-      title: "MYCOUNSELLOR",
-      description: "A counsellor booking android application built using Kotlin and MySQL Database, enabling efficient appointment scheduling.",
-      technologies: ["Kotlin", "MySQL", "Android"],
-      projectUrl: "https://github.com/gichuhiii/mycounsellor",
-      githubUrl: "https://github.com/gichuhiii/mycounsellor"
+      title: "Facial Recognition System",
+      description: "A real-time facial recognition system that captures, stores, and identifies faces using a webcam with Haar Cascade classifier and bounding box display.",
+      technologies: ["Python", "OpenCV", "KNN", "Machine Learning"],
+      projectUrl: "https://github.com/gichuhiii/facial-recognition-project",
+      githubUrl: "https://github.com/gichuhiii/facial-recognition-project"
     },
     {
       title: "ESOMA",
