@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 const ProjectCard = ({ title, description, technologies, projectUrl, githubUrl }) => {
   return (
-    <div className="bg-white/80 backdrop-blur p-6 rounded-xl shadow-lg group hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 transition-all duration-500">
-      <div className="space-y-4">
+    <div className="bg-white/80 backdrop-blur p-6 rounded-xl shadow-lg group hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 transition-all duration-500 h-full flex flex-col">
+      <div className="space-y-4 flex flex-col flex-grow">
         <h3 className="heading-md group-hover:text-gradient transition-colors duration-300">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 flex-grow">{description}</p>
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech, index) => (
             <span key={index} className="skill-tag">{tech}</span>
