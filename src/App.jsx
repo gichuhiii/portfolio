@@ -12,7 +12,7 @@ function App() {
       title: "TUMAINI",
       description: "A cervical cancer screening platform connecting patients with healthcare providers, featuring risk assessment, cost calculation, and AI-powered screening recommendations.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Redux"],
-      projectUrl: "https://tumaini.vercel.app/",
+      projectUrl: "https://github.com/gichuhiii/tumaini",
       githubUrl: "https://github.com/gichuhiii/tumaini"
     },
     {
